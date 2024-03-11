@@ -1,6 +1,7 @@
 /** @format */
+// abstract lo que permite es que no se pueda crear un animal en este caso, sino de la clase extendida de lemur-volador, y usar la clase animal como la estructura que debe contemplar lemur-volador
 
-export class Animal {
+export abstract class Animal {
   constructor(protected name: string) {} // protected es un private que puede heredarse, para que se puede tener acceso en la variable extendida pero sin la posibilidad de ser modificado
 
   move() {
